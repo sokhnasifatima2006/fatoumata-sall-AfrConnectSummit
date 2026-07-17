@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programme — AfriConnect Summit 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programme — AfriConnect Summit 2026</title>
+<meta name="description" content="Découvrez le programme complet des 3 jours d'AfriConnect Summit 2026 : sessions, intervenants et thématiques.">
+
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+
+<header>
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="logo"><svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="var(--primary)" stroke-width="2"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" transform="rotate(60 20 20)"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" transform="rotate(-60 20 20)"/><circle cx="20" cy="20" r="3.5" fill="var(--bg)" stroke="var(--text)" stroke-width="1.2"/></svg>AfriConnect <span>Summit 2026</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html" aria-current="page">Programme</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Basculer le thème sombre / clair"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero-internal">
+    <div class="container">
+      <span class="eyebrow">Du 15 au 17 octobre 2026</span>
+      <h1>Programme de la conférence</h1>
+      <p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Programme</p>
+    </div>
+  </section>
+
+  <div class="wax-divider"></div>
+
+  <!-- ===================== ONGLETS 3 JOURS ===================== -->
+  <section class="schedule">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Planning détaillé</span>
+        <h2>Que se passe-t-il chaque jour ?</h2>
+        <p>Cliquez sur un jour pour afficher son planning.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="jour1" role="tab" aria-selected="true">Jour 1 — 15 oct.</button>
+        <button class="tab-btn" data-tab="jour2" role="tab" aria-selected="false">Jour 2 — 16 oct.</button>
+        <button class="tab-btn" data-tab="jour3" role="tab" aria-selected="false">Jour 3 — 17 oct.</button>
+      </div>
+
+      <div id="jour1" class="tab-panel active reveal">
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>09h00</td><td>Ouverture officielle</td><td>Comité AfriConnect</td><td>Amphithéâtre Baobab</td></tr>
+            <tr><td>10h00</td><td>Keynote : L'IA au service de l'Afrique</td><td>Aïcha Diallo</td><td>Amphithéâtre Baobab</td></tr>
+            <tr><td>11h30</td><td>Table ronde Fintech</td><td>Kwame Mensah</td><td>Salle Teranga</td></tr>
+            <tr><td>14h00</td><td>Atelier : Lever des fonds en Afrique</td><td>Fatou Cissé</td><td>Salle Sahel</td></tr>
+            <tr><td>16h00</td><td>Networking &amp; cocktail</td><td>Tous les participants</td><td>Terrasse</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="jour2" class="tab-panel reveal">
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>09h00</td><td>Panel Data Science en Afrique</td><td>Brian Otieno</td><td>Amphithéâtre Baobab</td></tr>
+            <tr><td>10h30</td><td>Masterclass UX/UI mobile-first</td><td>Nadia Benali</td><td>Salle Sankofa</td></tr>
+            <tr><td>13h00</td><td>Déjeuner networking</td><td>—</td><td>Terrasse</td></tr>
+            <tr><td>14h30</td><td>Pitch startups (12 finalistes)</td><td>Jury AfriConnect</td><td>Salle Teranga</td></tr>
+            <tr><td>17h00</td><td>Remise des prix startups</td><td>Comité AfriConnect</td><td>Amphithéâtre Baobab</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="jour3" class="tab-panel reveal">
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>09h00</td><td>Cybersécurité : enjeux continentaux</td><td>Samuel Adeyemi</td><td>Salle Sahel</td></tr>
+            <tr><td>10h30</td><td>Atelier Cloud &amp; infrastructures</td><td>Grace Mwangi</td><td>Salle Sankofa</td></tr>
+            <tr><td>12h00</td><td>Table ronde investisseurs</td><td>Fatou Cissé, Kwame Mensah</td><td>Amphithéâtre Baobab</td></tr>
+            <tr><td>14h00</td><td>Session de clôture &amp; perspectives 2027</td><td>Comité AfriConnect</td><td>Amphithéâtre Baobab</td></tr>
+            <tr><td>15h30</td><td>Cocktail de clôture</td><td>Tous les participants</td><td>Terrasse</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THÉMATIQUES ===================== -->
+  <section class="themes" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">4 axes forts</span>
+        <h2>Les thématiques de l'édition 2026</h2>
+      </div>
+
+      <div class="themes-grid">
+        <article class="theme-card reveal">
+          <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>IA &amp; Tech</h3>
+          <p>Applications concrètes de l'intelligence artificielle dans les secteurs clés du continent.</p>
+        </article>
+        <article class="theme-card reveal">
+          <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Business &amp; Entrepreneuriat</h3>
+          <p>Stratégies de croissance, levées de fonds et internationalisation des startups africaines.</p>
+        </article>
+        <article class="theme-card reveal">
+          <div class="why-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Design &amp; Expérience</h3>
+          <p>Concevoir des produits numériques pensés pour les usages et contextes africains.</p>
+        </article>
+        <article class="theme-card reveal">
+          <div class="why-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h3>Data &amp; Infrastructures</h3>
+          <p>Exploitation des données et construction d'infrastructures cloud souveraines.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>AfriConnect Summit</h4>
+        <p>La conférence tech panafricaine qui connecte talents, entreprises et investisseurs.</p>
+        <div class="social-icons" style="margin-top:1rem;">
+          <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="intervenants.html">Intervenants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> contact@africonnectsummit.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2026</span> AfriConnect Summit. Tous droits réservés.</p>
+      <p>Projet réalisé par Sall Fatoumata — L1 DSBD</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="JS/main.js"></script>
 </body>
 </html>

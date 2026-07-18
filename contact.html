@@ -1,11 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact &amp; Inscription — AfriConnect Summit 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Inscription — AfriConnect Summit 2026</title>
+<meta name="description" content="Inscrivez-vous à AfriConnect Summit 2026 ou contactez notre équipe pour toute question.">
+
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+
+<header>
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="logo"><svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="var(--primary)" stroke-width="2"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round" transform="rotate(60 20 20)"/><line x1="20" y1="6" x2="20" y2="34" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" transform="rotate(-60 20 20)"/><circle cx="20" cy="20" r="3.5" fill="var(--bg)" stroke="var(--text)" stroke-width="1.2"/></svg>AfriConnect <span>Summit 2026</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Basculer le thème sombre / clair"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero-internal">
+    <div class="container">
+      <span class="eyebrow">Places limitées</span>
+      <h1>Inscription &amp; Contact</h1>
+      <p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Contact</p>
+    </div>
+  </section>
+
+  <div class="wax-divider"></div>
+
+  <!-- ===================== FORMULAIRE + INFOS ===================== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <form class="contact-form reveal-left" id="contact-form" novalidate>
+          <h2 style="margin-bottom:1.5rem;">Réservez votre place</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet *</label>
+              <input type="text" id="nom" name="nom" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telephone">Téléphone *</label>
+              <input type="tel" id="telephone" name="telephone" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="participation">Type de participation *</label>
+              <select id="participation" name="participation" required>
+                <option value="">Choisir…</option>
+                <option value="participant">Participant</option>
+                <option value="intervenant">Intervenant</option>
+                <option value="sponsor">Sponsor</option>
+                <option value="presse">Presse</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="flex: 1 1 100%;">
+              <label for="pays">Pays *</label>
+              <select id="pays" name="pays" required>
+                <option value="">Choisir votre pays…</option>
+                <option value="senegal">Sénégal</option>
+                <option value="cote-ivoire">Côte d'Ivoire</option>
+                <option value="ghana">Ghana</option>
+                <option value="nigeria">Nigéria</option>
+                <option value="kenya">Kenya</option>
+                <option value="maroc">Maroc</option>
+                <option value="tunisie">Tunisie</option>
+                <option value="afrique-sud">Afrique du Sud</option>
+                <option value="mali">Mali</option>
+                <option value="cameroun">Cameroun</option>
+                <option value="benin">Bénin</option>
+                <option value="rwanda">Rwanda</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="flex: 1 1 100%;">
+              <label for="message">Message / Motivation *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Envoyer ma demande</button>
+
+          <div class="form-success" id="form-success" tabindex="-1">
+            <i class="fa-solid fa-circle-check"></i> Merci ! Votre demande a bien été envoyée. Notre équipe vous recontactera sous 48h.
+          </div>
+        </form>
+
+        <aside class="contact-info reveal">
+          <div class="info-card">
+            <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+            <p>contact@africonnectsummit.com</p>
+          </div>
+          <div class="info-card">
+            <h3><i class="fa-solid fa-phone"></i> Téléphone</h3>
+            <p>+221 76 153 81 64</p>
+          </div>
+          <div class="info-card">
+            <h3><i class="fa-solid fa-location-dot"></i> Lieu</h3>
+            <p>Centre International de Conférences, Diamniadio — Dakar, Sénégal</p>
+          </div>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=Dakar,Senegal&output=embed"
+              title="Localisation d'AfriConnect Summit à Dakar"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ (accordéon CSS pur) ===================== -->
+  <section class="faq-section" style="background: var(--bg-alt);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-head reveal">
+        <span class="eyebrow">Vous vous posez des questions ?</span>
+        <h2>Foire aux questions</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <input type="checkbox" id="faq1">
+          <label for="faq1">Le billet donne-t-il accès aux 3 jours ?</label>
+          <div class="faq-answer"><p>Oui, un billet unique vous donne accès à l'ensemble des sessions, ateliers et espaces networking pendant les 3 jours de la conférence.</p></div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq2">
+          <label for="faq2">Puis-je m'inscrire en tant qu'intervenant ?</label>
+          <div class="faq-answer"><p>Oui, sélectionnez « Intervenant » dans le formulaire. Notre comité étudiera votre proposition sous 10 jours ouvrés.</p></div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq3">
+          <label for="faq3">Le repas est-il inclus ?</label>
+          <div class="faq-answer"><p>Les déjeuners et pauses café sont inclus dans le billet Participant pour les 3 jours de l'événement.</p></div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq4">
+          <label for="faq4">Existe-t-il un tarif réduit étudiant ?</label>
+          <div class="faq-answer"><p>Oui, un tarif étudiant est disponible sur présentation d'une carte étudiante valide lors du retrait du badge.</p></div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq5">
+          <label for="faq5">Comment devenir sponsor de l'événement ?</label>
+          <div class="faq-answer"><p>Choisissez « Sponsor » dans le formulaire de contact ; notre équipe partenariats vous enverra notre dossier sponsoring.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>AfriConnect Summit</h3>
+        <p>La conférence tech panafricaine qui connecte talents, entreprises et investisseurs.</p>
+        <div class="social-icons" style="margin-top:1rem;">
+          <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="intervenants.html">Intervenants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> contact@africonnectsummit.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2026</span> AfriConnect Summit. Tous droits réservés.</p>
+      <p>Projet réalisé par Sall Fatoumata — L1 DSBD</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="JS/main.js"></script>
 </body>
 </html>
